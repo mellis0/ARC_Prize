@@ -1,4 +1,4 @@
-This is my solution to the ARC Prize Problem, which is a yet-to-be-solved problem about how to instill a computer with common sense.
+This is my solution to the ARC Prize Problem, which is a yet-to-be-solved problem about how to deduce patterns from a very small dataset (2 to 5 examples). Humans generally perform very well on the ARC problems compared to computers.
 
 The ARC prize corpus is a collection of grids with colorful squares. To solve one, an agent must deduce the pattern from an example pair, then apply that pattern to the test grid.
 
