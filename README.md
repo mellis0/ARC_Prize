@@ -1,22 +1,9 @@
-Welcome to the ARC competition project which you will be working on this semester.
+This is my solution to the ARC Prize Problem, which is a yet-to-be-solved problem about how to instill a computer with common sense.
 
-To get started, you'll need a working version of python. I suggest creating a setup
-using pyenv (see https://github.com/pyenv/pyenv-installer). Although I don't personally
-recommend it, you can also use conda (https://anaconda.org/anaconda/conda).
+The ARC prize corpus is a collection of grids with colorful squares. To solve one, an agent must deduce the pattern from an example pair, then apply that pattern to the test grid.
 
-Once you have a working version of python, you'll need to install jupyter notebooks.
-You can do this with the following command: `pip install jupyter`. You can learn 
-more about jupyter here: https://jupyter.org
+To explore ARC problems you can visit https://arcprize.org or manually try to solve problems here: https://tail.cc.gatech.edu/kbai/arc-prize/
 
-After getting jupyter installed, you can navigate to this project's folder at your command
-line and run: `jupyter notebook`. This will launch the jupyter client in your browser. 
+The foundation of my solution is the Breadth-First Search algorithm. My agent considers a set of basic actions that can be taken to augment the grid, like swapping colors or rotating the grid, then it searches over those actions to see if it can deduce a path from the input to the output. This path is essentially the pattern, so once a path is found, it can be applied to the test grid.
 
-Navigate to and open `working/sample_submission.ipynb`. This will be the main file you 
-will work on for your project.
-
-You can submit your `sample_submission.ipynb` file to the gradescope portal. You should
-be able to submit the sample as-is and it should run successfully and give you a score
-of 0. You'll have to do some work to get a higher score :)
-
-To explore ARC problems you can visit https://arcprize.org or manually try to solve
-problems here: https://tail.cc.gatech.edu/kbai/arc-prize/
+The Breadth-First Search in my agent is bolstered by some modifications that make it more efficient, like never repeating a state in the search and refusing to expand actions that add irrelevant colors to the grid.
