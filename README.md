@@ -1,5 +1,7 @@
 This is my solution to the ARC Prize Problem, which is a yet-to-be-solved problem about how to deduce patterns from a very small dataset (2 to 5 examples). Humans generally perform very well on the ARC problems compared to computers.
 
+To see my paper about the topic, see my ARC Paper repo: https://github.com/mellis0/CS-4635-ARC-Paper. This repository only contains my code, not the write-up.
+
 The ARC prize corpus is a collection of grids with colorful squares. To solve one, an agent must deduce the pattern from an example pair, then apply that pattern to the test grid.
 
 To explore ARC problems you can visit https://arcprize.org or manually try to solve problems here: https://tail.cc.gatech.edu/kbai/arc-prize/
